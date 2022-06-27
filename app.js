@@ -73,10 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
     var cardsChosen = []
     var cardsChosenId = []
     var cardsWon = []
+    var guesses = 0
 
     const resultDisplay = document.querySelector('#result')
+    const guessesDisplay = document.querySelector('#guesses')
 
     resultDisplay.textContent = cardsWon.length
+    guessesDisplay.textContent = guesses
 
     // making the board 
     function makeBoard() {
@@ -98,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)
         if (cardsChosen.length === 2) {
+            guesses ++
             setTimeout(checkForMatch, 500)
         }
     }
@@ -121,11 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosen = []
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
+        guessesDisplay.textContent = guesses
         if (cardsWon.length === cardArray.length/2) {
             resultDisplay.textContent = 'Congratulations! You won!'
         }
     }
 
     makeBoard() 
-    
+
 })
