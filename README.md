@@ -5,7 +5,7 @@ Taking a look at my somewhat **limited** Github repository, I came across this '
 
 I chose to mess around with a retro-gaming 👾 16-bit-esque design, keeping with the traditional black and white 70s color theme. 
 
-![Image of web application]()
+![Image of web application](images/UI.png)
 
 This is an **extremely** lightweight web application created entirely with native JavaScript, HTML, and CSS (unless you count the use of the Google Fonts API 😆), and while playable, probably won't be proving hours of entertainment for the whole family 😴 
 

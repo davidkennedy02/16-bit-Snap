@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>Snap</title>
     <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Press+Start+2P">
     <script src="app.js" charset="UTF-8"></script>
 </head>
 
 <body>
-
-    <h3>Score: <span id="result"></span></h3>
+    <h1>16-bit Snap</h1>
+    <h3>---------------</h3>
+    <h3><span id="result"></span></h3>
     <h3>Guesses: <span id="guesses"></span></h3>
 
     <div class="grid">
@@ -30,6 +33,18 @@
         <square class = "square15"></square>
         <square class = "square16"></square>
     </div>
+
+    <div id="victory">
+        <img id="trophy" src="images/trophy.png">
+    </div>
+
+    <h3>Top score: <span id="top-score"></span> guesses</h3>
+
+    <div id="button-div">
+        <button id="button-restart" class="button"><h3>Try again</h3></button>
+        <button id="button-new-game" class="button"><h3>New game</h3></button>
+    </div>
+    
     
 </body>
 </html>
