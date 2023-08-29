@@ -11,4 +11,5 @@ This is an **extremely** lightweight web application created entirely with nativ
 
 In the future, I plan to add a welcome screen and hopefully improve the styling when I get the chance (or remember this project exists 😄), so keep an eye out!  
 
-
+# How to run 🏃‍♂️
+As with many other web applications, simply opening the HTML document in a modern browser should do the trick, provided the document has the expected paths to the supplementary images, styles, and scripts. 
